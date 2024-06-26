@@ -50,7 +50,7 @@
 
   set page(
     paper: "a4",
-    margin: (x: 1cm, y: 1cm),
+    margin: (x: 0.8cm, y: 0.8cm),
   )
 
   set par(justify: true)
