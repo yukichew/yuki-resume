@@ -27,18 +27,22 @@
 
 #let title(name, period) = {
     heading(name, level: 3)
-    text(9pt)[#h(1fr) #period]
+    text(10pt)[#h(1fr) #period]
 }
 
 #let location(company, place) = {
-  text(9pt)[#company]
-  text(8pt)[#h(1fr) #emph(place)]
+  text(10pt)[#company]
+  text(10pt)[#h(1fr) #emph(place)]
 }
 
 #let styled-link(dest, content) = emph(text(
     link(dest, content)
   )
 )
+
+#let languages(level, language) = {
+    text(10pt)[#strong(level): #language #h(1fr)]
+}
 
 #let resume(name: "", phone:"", links: (), summary: [], content,) = {
   set document(
